@@ -4,7 +4,7 @@ public class Principal {
     public static void main(String[] args) {
         Motorista m1 = new Motorista("Joao","Silva",123);
         Engenheiro e1 = new Engenheiro("Tom","Jobim",321);
-
+//
 //        m1.setNome("Joao");
 //        m1.setSobrenome("Silva");
 //        m1.setMatricula("123");
@@ -14,7 +14,6 @@ public class Principal {
         System.out.println("Matricula: " +m1.getMatricula());
         System.out.println("Salario do motorista: " + m1.getSalario());
         System.out.println("Numero cnh do motorista: "+m1.getCnh());
-
 //        e1.setNome("Tom");
 //        e1.setSobrenome("Jobim");
 //        e1.setMatricula(1321);
