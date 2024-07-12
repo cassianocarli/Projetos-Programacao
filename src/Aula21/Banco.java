@@ -20,9 +20,28 @@ public class Banco {
         System.out.print(mensagem + ": ");
         return ler.nextFloat();
     }
+//
+//    public ContaCorrente cadastraCC(){
+//        String titular = leString("Qual o nome do titular");
+//        String senha = leString("Qual a senha:");
+//        float limite = lefloat("Qual o limite inicial");
+//        ContaCorrente c1 = new ContaCorrente(titular,senha,limite);
+//        System.out.println("Conta cadastrada com o id "+c1.getIdentificador);
+//        return c1;
+//    }
+//    public ContaPoupanca cadastraCP(){
+//        String titular = leString("Qual o nome do titular");
+//        String senha = leString("Qual a senha:");
+//        float limite = lefloat("Qual o limite inicial");
+//        ContaPoupanca c1 = new ContaPoupanca(titular,senha,limite);
+//        System.out.println("Conta cadastrada com o id "+c1.getIdentificador);
+//        return c1;
+//    }
+//
 
     public static ContaCorrente acessaCC(ContaCorrente c1) {
         Scanner ler = new Scanner(System.in);
+        System.out.println("Bem vindo "+c1.getTitular());
         char opc;
         do {
             System.out.println("\nSelecione uma opção:");
@@ -54,6 +73,7 @@ public class Banco {
 
     public static ContaPoupanca acessaCP(ContaPoupanca c1) {
         Scanner ler = new Scanner(System.in);
+        System.out.println("Bem vindo "+c1.getTitular());
         char opc;
         do {
             System.out.println("\nSelecione uma opção:");
@@ -185,57 +205,57 @@ public class Banco {
     }
 }
 
-public class Conta {
-    private String titular;
-    private String id;
-    private String senha;
-    protected float saldo;
+//public class Conta {
+//    private String titular;
+//    private String id;
+//    private String senha;
+//    protected float saldo;
+//
+//    public String getTitular() {
+//        return titular;
+//    }
+//
+//    public void setTitular(String titular) {
+//        this.titular = titular;
+//    }
+//
+//    public String getId() {
+//        return id;
+//    }
+//
+//    public void setId(String id) {
+//        this.id = id;
+//    }
+//
+//    public String getSenha() {
+//        return senha;
+//    }
+//
+//    public void setSenha(String senha) {
+//        this.senha = senha;
+//    }
+//
+//    public float getSaldo() {
+//        return saldo;
+//    }
+//
+//    public void depositar(float valor) {
+//        this.saldo += valor;
+//    }
+//
+//    public boolean sacar(float valor) {
+//        if (this.saldo >= valor) {
+//            this.saldo -= valor;
+//            return true;
+//        }
+//        return false;
+//    }
+//}
+//
+//public class ContaCorrente extends Conta {
+//
+//}
 
-    public String getTitular() {
-        return titular;
-    }
-
-    public void setTitular(String titular) {
-        this.titular = titular;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getSenha() {
-        return senha;
-    }
-
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
-
-    public float getSaldo() {
-        return saldo;
-    }
-
-    public void depositar(float valor) {
-        this.saldo += valor;
-    }
-
-    public boolean sacar(float valor) {
-        if (this.saldo >= valor) {
-            this.saldo -= valor;
-            return true;
-        }
-        return false;
-    }
-}
-
-public class ContaCorrente extends Conta {
-
-}
-
-public class ContaPoupanca extends Conta {
-
-}
+//public class ContaPoupanca extends Conta {
+//
+//}
