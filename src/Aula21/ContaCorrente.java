@@ -1,5 +1,5 @@
 package Aula21;
-
-public class ContaCorrente extends Conta {
+import java.io.Serializable;
+public class ContaCorrente extends Conta  {
 
 }
