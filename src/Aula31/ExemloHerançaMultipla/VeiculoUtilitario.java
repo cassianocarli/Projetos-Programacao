@@ -1,5 +1,5 @@
 package Aula31.ExemloHerançaMultipla;
-
+/*
 public class VeiculoUtilitario implements VeiculoCarga, VeiculoPasseio{
 
     @Override
@@ -22,3 +22,4 @@ public class VeiculoUtilitario implements VeiculoCarga, VeiculoPasseio{
 
     }
 }
+*/
